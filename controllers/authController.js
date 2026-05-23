@@ -51,44 +51,35 @@ res.status(201).json({
 };
 
 // login
+// login
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    const user =
-      await User.findOne({ email });
+    const user = await User.findOne({ email });
 
     if (!user) {
-      return res.status(404).json({
-        message: "User not found"
-      });
+      return res.status(404).json({ message: "User not found" });
     }
 
-    const isMatch =
-      await bcrypt.compare(
-        password,
-        user.password
-      );
+    const isMatch = await bcrypt.compare(password, user.password);
 
     if (!isMatch) {
-      return res.status(400).json({
-        message: "Invalid credentials"
-      });
+      return res.status(400).json({ message: "Invalid credentials" });
     }
-generateToken(res, user);
-res.json({
-  success: true,
-  message: "Login successful",
-  user
-});
+
+    const token = generateToken(res, user); // ← store in variable
+    res.json({
+      success: true,
+      message: "Login successful",
+      token, // ← send it back!
+      user
+    });
     
   } catch (error) {
-    res.status(500).json({
-      message: error.message
-    });
+    res.status(500).json({ message: error.message });
   }
 };
-
 // logout
 export const logoutUser = (req, res) => {
   res.cookie("token", "", {
