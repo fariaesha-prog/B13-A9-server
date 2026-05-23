@@ -23,7 +23,7 @@ router.get("/search", searchTutors);
 
 router.get("/my-tutors", verifyJWT, getMyTutors);
 
-router.get("/:id", verifyJWT, getSingleTutor);
+router.get("/:id", getSingleTutor);
 
 router.post("/", verifyJWT, addTutor);
 
