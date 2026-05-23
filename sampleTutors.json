@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Rakib Hasan",
+    "image": "https://i.ibb.co/sample1.jpg",
+    "subject": "Mathematics",
+    "experience": 5,
+    "email": "rakib@gmail.com",
+    "price": 40,
+    "availableDate": "2026-06-01",
+    "totalSlots": 10,
+    "description": "Expert in Algebra and Calculus"
+  },
+  {
+    "name": "Nusrat Jahan",
+    "image": "https://i.ibb.co/sample2.jpg",
+    "subject": "Physics",
+    "experience": 4,
+    "email": "nusrat@gmail.com",
+    "price": 35,
+    "availableDate": "2026-06-03",
+    "totalSlots": 8,
+    "description": "Physics Olympiad trainer"
+  },
+  {
+    "name": "Siam Ahmed",
+    "image": "https://i.ibb.co/sample3.jpg",
+    "subject": "Chemistry",
+    "experience": 6,
+    "email": "siam@gmail.com",
+    "price": 50,
+    "availableDate": "2026-06-05",
+    "totalSlots": 12,
+    "description": "Organic chemistry specialist"
+  },
+  {
+    "name": "Tanvir Rahman",
+    "image": "https://i.ibb.co/sample4.jpg",
+    "subject": "English",
+    "experience": 3,
+    "email": "tanvir@gmail.com",
+    "price": 25,
+    "availableDate": "2026-06-07",
+    "totalSlots": 15,
+    "description": "IELTS mentor"
+  },
+  {
+    "name": "Mim Akter",
+    "image": "https://i.ibb.co/sample5.jpg",
+    "subject": "Biology",
+    "experience": 7,
+    "email": "mim@gmail.com",
+    "price": 45,
+    "availableDate": "2026-06-09",
+    "totalSlots": 10,
+    "description": "Medical admission coach"
+  },
+  {
+    "name": "Arif Khan",
+    "image": "https://i.ibb.co/sample6.jpg",
+    "subject": "Programming",
+    "experience": 8,
+    "email": "arif@gmail.com",
+    "price": 60,
+    "availableDate": "2026-06-10",
+    "totalSlots": 20,
+    "description": "Full Stack Developer"
+  },
+  {
+    "name": "Farzana Islam",
+    "image": "https://i.ibb.co/sample7.jpg",
+    "subject": "Economics",
+    "experience": 5,
+    "email": "farzana@gmail.com",
+    "price": 30,
+    "availableDate": "2026-06-12",
+    "totalSlots": 9,
+    "description": "Macro economics tutor"
+  },
+  {
+    "name": "Shuvo Roy",
+    "image": "https://i.ibb.co/sample8.jpg",
+    "subject": "Statistics",
+    "experience": 4,
+    "email": "shuvo@gmail.com",
+    "price": 38,
+    "availableDate": "2026-06-14",
+    "totalSlots": 11,
+    "description": "Data analysis expert"
+  },
+  {
+    "name": "Ayesha Noor",
+    "image": "https://i.ibb.co/sample9.jpg",
+    "subject": "Accounting",
+    "experience": 5,
+    "email": "ayesha@gmail.com",
+    "price": 42,
+    "availableDate": "2026-06-15",
+    "totalSlots": 10,
+    "description": "BBA accounting tutor"
+  },
+  {
+    "name": "Imran Hossain",
+    "image": "https://i.ibb.co/sample10.jpg",
+    "subject": "ICT",
+    "experience": 6,
+    "email": "imran@gmail.com",
+    "price": 48,
+    "availableDate": "2026-06-18",
+    "totalSlots": 13,
+    "description": "Networking and programming mentor"
+  }
+]
