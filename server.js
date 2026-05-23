@@ -14,14 +14,14 @@ dotenv.config();
 const app = express();
 
 // database connection
-//connectDB();
+connectDB();
 
 // middleware
+
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: process.env.CLIENT_URL || "http://localhost:3000",
   credentials: true
 }));
-
 app.use(express.json());
 app.use(cookieParser());
 
