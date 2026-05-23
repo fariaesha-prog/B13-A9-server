@@ -36,13 +36,13 @@ export const registerUser = async (req, res) => {
       photoURL
     });
 
-    generateToken(res, user);
-
-    res.status(201).json({
-      success: true,
-      message: "Registration successful",
-      user
-    });
+    const token = generateToken(res, user);
+res.status(201).json({
+  success: true,
+  message: "Registration successful",
+  token,
+  user
+});
   } catch (error) {
     res.status(500).json({
       message: error.message
@@ -75,14 +75,13 @@ export const loginUser = async (req, res) => {
         message: "Invalid credentials"
       });
     }
-
-    generateToken(res, user);
-
-    res.json({
-      success: true,
-      message: "Login successful",
-      user
-    });
+generateToken(res, user);
+res.json({
+  success: true,
+  message: "Login successful",
+  user
+});
+    
   } catch (error) {
     res.status(500).json({
       message: error.message
