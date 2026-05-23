@@ -20,12 +20,22 @@ export const addTutor = async (req, res) => {
 // GET ALL TUTORS
 export const getAllTutors = async (req, res) => {
   try {
-    const tutors = await Tutor.find();
+    const search = req.query.search || "";
+
+    const query = {
+      tutorName: {
+        $regex: search,
+        $options: "i",
+      },
+    };
+
+    const tutors = await Tutor.find(query);
 
     res.json(tutors);
+
   } catch (error) {
     res.status(500).json({
-      message: error.message
+      message: error.message,
     });
   }
 };
