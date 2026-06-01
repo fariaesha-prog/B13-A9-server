@@ -17,7 +17,6 @@ const app = express();
 connectDB();
 
 // middleware
-
 app.use(cors({
   origin: [
     "http://localhost:3000",
@@ -25,6 +24,9 @@ app.use(cors({
   ],
   credentials: true
 }));
+
+app.use(express.json());
+app.use(cookieParser());
 
 // routes
 app.use("/api/auth", authRoutes);
