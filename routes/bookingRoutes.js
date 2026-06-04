@@ -23,7 +23,7 @@ router.get(
 );
 
 router.patch(
-  "/cancel/:id",
+"/:id/cancel",
   verifyJWT,
   cancelBooking
 );

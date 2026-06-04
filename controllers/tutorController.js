@@ -3,17 +3,18 @@ import Tutor from "../models/Tutor.js";
 // ADD TUTOR
 export const addTutor = async (req, res) => {
   try {
-    const tutor = await Tutor.create(req.body);
+    const tutor = await Tutor.create({
+      ...req.body,
+      tutorEmail: req.user.email, // ← always from token, never from body
+    });
 
     res.status(201).json({
       success: true,
       message: "Tutor added successfully",
-      tutor
+      tutor,
     });
   } catch (error) {
-    res.status(500).json({
-      message: error.message
-    });
+    res.status(500).json({ message: error.message });
   }
 };
 
