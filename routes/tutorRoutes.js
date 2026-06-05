@@ -29,6 +29,8 @@ router.post("/", verifyJWT, addTutor);
 
 router.put("/:id", verifyJWT, updateTutor);
 
+router.patch("/:id", verifyJWT, updateTutor);
+
 router.delete("/:id", verifyJWT, deleteTutor);
 
 export default router;
